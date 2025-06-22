@@ -1,0 +1,777 @@
+This is Summary for [Create Full Stack E-commerce Website Using React JS | MERN Stack eCommerce Project with Stripe] and MERN Stack | Full Stack E-commerce Tutorial with Stripe Integration" 
+
+Creating a full stack e-commerce website using MERN stack
+- Utilizing MongoDB, Express, React, and Node.js for building the project
+- Features include product listings, filtering by category, and sorting by price
+
+Website navigation and user account management
+- Products can be filtered and search using the search icon
+- User can login, create account, and view product details
+
+Demonstrating admin panel functionalities
+- Accessing admin panel with email ID and password, managing orders, updating order status, adding new products
+- Uploading images, selecting product details, adding to best seller list, viewing newly added product in collection
+
+Setting up the front end for the e-commerce project using React
+- Creating a folder named 'e-commerce app' and opening it in VS Code
+- Setting up a React project in the 'front end' folder using npm create react-app command
+
+Adding assets and defining product data structure
+- Copying and pasting assets into the project and importing them
+- Defining the structure of product data including ID, name, description, price, images, category, subcategory, sizes, date, and best seller property
+
+Setting up PostCSS dependencies and configuring files
+- Installing necessary dependencies using specific commands in the terminal
+- Setting up folder structure for front end project: pages and components
+
+Setting up browser routing using React Router DOM for multiple pages
+- By wrapping the app tag with browser router, the project gets React Router DOM support
+- Creating multiple routes using React Router DOM for different pages like login and homepage
+
+Setting up routes for different pages
+- Adding routes for about, contact, product, cart, login, place order and orders pages
+- Specifying the path and corresponding components for each route
+
+Creating navigation menu with react router
+- Using UL tag with menu items and styling
+- Implementing navigation links and adding path for redirection
+
+Updating navigation tags and links for website sections.
+- Updating text content and routes for different sections like Home, Collection, About, and Contact.
+- Adding active class automatically to the current route in the navigation menu for better user experience.
+
+Creating drop-down menu for profile icon with login/logout options
+- Adding CSS properties for styling the drop-down menu
+- Implementing functionality to change text color on hover and adding link tag from react router
+
+Adding cart icon and count to navigation bar for desktop screen
+- Adding image tag with cart icon and providing class name with width and minimum width
+- Adding P tag with random number count and providing class name with absolute position and styling
+
+Adding navigation bar and close icon to the sidebar menu.
+- Adding class name properties and creating div tags for navigation links and close icon.
+- Implementing functionality to close the sidebar menu when clicking on the back button.
+
+Creating and implementing navigation bar with automatic sidebar menu closure
+- Adding cursor pointer effect and creating navigation tags with properties and text
+- Implementing logic to automatically close sidebar menu when clicking on any menu item
+
+Designing layout for medium and larger screens
+- Setting width and height for better display
+- Adding text and styling for better appearance
+
+Adding custom fonts for better UI design
+- Search and select custom fonts from Google Fonts website
+- Add font import statement in the code file and apply font family to HTML elements
+
+Creating and exporting SopContextProvider function
+- Adding products from assets folder and providing them in the context API
+- Creating variables for currency symbol and delivery fee to access in other components
+
+Implementing the latest collection feature using the context API
+- Mounting the latest collection component on the homepage after the hero component in home.jsx
+- Utilizing the context API to fetch products data and display it in the latest collection section
+
+Utilizing Title Component for Text Display
+- The title component allows for displaying dynamic text using props.
+- Can be reused multiple times to display different texts.
+
+Utilizing useEffect hook and setting latest products
+- Using useEffect hook with empty dependency array for executing once on component load
+- Setting up latest products with 10 products to be displayed, creating product item component
+
+Creating a component to render products
+- Use array mapping for rendering products with appropriate props
+- Display product details like ID, image, name, and price
+
+Adding navigation logic for homepage and product details
+- Wrapping the logo with a link tag to redirect to the homepage
+- Adding logic for active page indication in the side menu
+
+Display best seller products on the homepage
+- Use the slice method to display only 5 products
+- Add class name properties and styling to the components for display
+
+Creating components for best seller products and responsive layout
+- Using state to add bestseller products and map through the list to render individual items with key properties
+- Implementing mobile responsive design and planning to create a new component for policy section
+
+Creating a newsletter subscription box with React JS
+- Adding text and styling to the newsletter box component
+- Implementing an input field for email subscription with required attribute
+
+Creating a newsletter box and an onSubmit handler function
+- Styling the newsletter box by adding class names, width, Flex properties, border, and padding
+- Creating a footer component and mounting it in the app.jsx file
+
+Creating footer section with contact information and copyright text
+- Adding contact details like phone number and email in the footer section
+- Including copyright text with current year on the website footer
+
+Creating Collection Page with Filters
+- Designing the collection page to display all products and adding filters
+- Using context API to fetch product data and styling the filter options
+
+Creating category filters with checkboxes
+- Adding checkbox input fields with specific properties for category filtering
+- Implementing subcategory filtering using additional input fields and values
+
+Implement dynamic class name based on screen size
+- Add class name based on screen size for proper display
+- Implement logic to hide/show filters based on screen size and user interaction
+
+Creating and mapping products on the website
+- Adding sorting functionality based on price
+- Utilizing state variable and useEffect hook to manage and display products
+
+Setting up State variables and toggle functions for adding data in category and subcategory
+- Creating State variables for category and subcategory with initializations
+- Implementing toggle functions to add data in respective categories based on user selection
+
+Setting up filter functionality for categories and subcategories
+- Filtering products based on selected category stored in an array
+- Implementing logic to toggle subcategories for further filtering
+
+Implementing filter logic for product categories
+- Checking and adding products based on selected category
+- Removing products if category is unchecked
+
+Implementing filter and sort features for products
+- Filter feature allows displaying specific product categories accurately.
+- Adding sort feature enables sorting products by price from low to high.
+
+Logic for sorting products based on price
+- Switch case used to create cases for sorting based on value
+- State variable 'sort type' used to update the sorting type
+
+Creating and using a search state variable in the E-commerce project
+- Creating state variable with the name 'search' and initializing it to true for displaying the search bar
+- Accessing the 'search' state variable and set function in the value object and mounting the component in app.jsx file
+
+Creating input field, saving data in state, adding image tags with classes
+- Adding input field with text type and classes, saving data in 'search' state
+- Adding image tags with classes and functionality to remove search bar
+
+Display search bar based on URL path
+- Utilize location hook to fetch path of URL
+- Implement logic to show search bar only on collection page based on conditions
+
+Implement search functionality
+- Added and operator to fix search functionality
+- Implemented logic to display products related to search query
+
+Retrieve and display product data using product ID.
+- Add console log to verify product ID retrieval from URL.
+- Fetch product data, store in state variable, and update using useEffect hook.
+
+Handling individual item data and display product details
+- Using if statement to check for matching item and product ID
+- Storing product data and first image in state variables for display
+
+Display product images and update main image on click
+- Use console.log to display product data
+- Use map method to display images in a div and update main image on click
+
+Implementing image click functionality and displaying product information.
+- Adding on click property to image tag to call set image function.
+- Displaying product information using H1 tag and image tags with class names.
+
+Hide scroll bar and align images using Flex properties
+- Create div with Flex properties and product size text
+- Display product sizes using map method in buttons with dynamic styling
+
+Implementing logic to highlight selected size in an e-commerce website
+- Creating a state variable to manage the selected size and updating it based on user selection
+- Adding CSS classes dynamically to highlight the selected size and creating a button for adding items to the cart
+
+Creating description box and related products section for e-commerce website
+- Adding text and reviews to description box with specific styling
+- Creating related products section to display products based on category and subcategory
+
+Creating logic to filter products based on category and subcategory
+- Initialize state variable 'related' and use useEffect to update it
+- Create a copy of products, apply filter by category, then filter again by subcategory
+
+Setting up product display on e-commerce website
+- Utilizing state to store product data and mapping products to display them
+- Styling the product display with class names, text properties, and grid columns
+
+Creating product page with related products
+- Display related products from the same category and subcategory
+- Implement product gallery, details, and add to cart functionality
+
+Implementing cart functionality and adding items to cart
+- Saving cart data in cart items State variable using setCartItems
+- Utilizing useEffect to monitor changes in cart items and log changes in console
+
+Implementing Add to Cart Functionality with Product Size Control
+- Demonstration of adding items to cart with different sizes and quantities
+- Integrating react-toastify to display notifications for selecting product size before adding to cart
+
+Creating logic to get the total count of cart items
+- Using for-in loops to iterate through the cart items and product sizes
+- Implementing condition to increase count if product with particular size is in the cart
+
+Implementing logic to update and display cart count
+- Removing the number and implementing logic to display cart count
+- Creating cart page to display products, quantity, and size
+
+Testing and implementing product quantity logic in the shopping cart.
+- Console logging temporary data to verify functionality.
+- Setting temporary data in the cart and using it to display multiple products on the cart page.
+
+Create product display with product data and image
+- Utilize the map method to iterate over each product and find the matching product data based on ID
+- Display the product data and image on the webpage using proper CSS styling
+
+Setting up product image, name, price, and size on the web page
+- Adding input field for quantity and applying CSS properties
+- Creating functionality to delete product from the cart using an icon
+
+Implementing update quantity function in MERN Stack eCommerce Project
+- The update quantity function takes item ID, size, and quantity as parameters and updates the quantity for a specific item in the cart
+- The function creates a copy of the cart items, updates the quantity, and saves the modified cart data in the cart items state
+
+Handling quantity and updating cart items
+- The process of converting the string quantity into a number is described, and how it's used to update the cart.
+- Demonstration of the functionality in the web browser, including increasing, decreasing, and minimum quantity logic.
+
+Implementing logic to calculate total amount based on product price and quantity
+- Loop through items to find product using item ID and store product data
+- Calculate total amount by multiplying product price with quantity and sum up for all products in cart
+
+Creating delivery fee calculation component
+- First paragraph tag: Adding shipping fee and currency format
+- Second paragraph tag: Providing delivery fee and using flexbox styling
+
+Fixing errors and testing the add to cart functionality
+- Resolved the issue by editing the get cart amount function in the sop context.jsx file
+- Tested adding different products to the cart and ensured the cart total component is working perfectly
+
+Creating input fields for delivery information
+- Adding divs and class names to structure the layout
+- Defining and styling input fields for name, phone number, and address
+
+Creating input fields for user information
+- Adding different input types like text, email, and number
+- Setting placeholder text for each input field
+
+Style and display dynamic content
+- Using dynamic class names to style a paragraph based on selections and adding borders
+- Adding image tags with specific sources and class names for logos and styling
+
+Setting up payment methods with onClick property
+- Added onClick property to three payment method divs
+- Updated state variable when payment method is selected
+
+Mounting title component with props in React
+- Retrieve products data and currency symbol from context using useContext
+- Display orders data by slicing products and mapping through to show as orders
+
+Create product display with image, name, price
+- Using divs and tags to structure product information on the webpage.
+- Styling and formatting product details using classes and properties.
+
+Creating UI for order and login page
+- Set up track order button and completed order UI
+- Implemented UI for login page by adding a link to the profile icon and designing the login page
+
+Creating sign up form with input fields
+- Adding div with class name property and styling for sign up text
+- Creating input fields for name, email, and password with specific properties
+
+Adding functionality to toggle between login and signup states.
+- Dynamically changing the text and behavior based on the current state.
+- Verifying the functionality in the web browser by testing the signup and login forms.
+
+Creating a sign up and login form with prevention of page reload
+- Explaining the process of adding email and password in the sign up form and handling form submission
+- Creating an onsubmit handler function to prevent page reload upon form submission
+
+Creating sections with descriptive content and styling in E-commerce website
+- Adding div elements with specific class names for layout structure and styling
+- Including text content with relevant information and styling within the div elements
+
+Setting up newsletter subscription box and completing About Us page
+- Adding class name property with text color to P tags for a visual enhancement
+- Creating contact page by adding necessary components like title, image, and styling
+
+Create full stack e-commerce website using React JS
+- -1
+
+Setting up the backend for the e-commerce project
+- Creating a new backend folder and server.js file in VS Code
+- Installing necessary dependencies using npm for backend functionality
+
+Backend folder structure and server setup
+- Controllers folder for managing backend logics
+- Routes folder for managing express server routes and setting up server start command
+
+Setting up express server and creating API endpoints
+- Defining port number using environment variable
+- Creating middleware using express.json and cors
+
+Setting up MongoDB Atlas for the project
+- Creating a new project and adding a cluster with m0 server for free storage
+- Setting up a database user, connection string, and environment variable in VS code
+
+Configuring and connecting MongoDB with MERN Stack
+- Setting up network access and allowing access from any IP address
+- Creating and configuring a new file to connect to the MongoDB Atlas server
+
+Configuring Cloud NY for image storage
+- Obtaining API key from Cloud NY website by logging in and creating a new key
+- Adding API key, secret key, and account name as environment variables in VS code
+
+Configuring Cloud N storage for the project
+- Importing and configuring the cloud package
+- Creating a model to store data in the database
+
+Create models for product and user with Mongoose schema in MERN stack project
+- Define properties like date with type as number and required as true in the schema
+- Use dot notation and OR operator to prevent creating multiple models for products and users
+
+Defining user properties in the schema
+- Adding name, email, password, and cart data with specific data types and requirements
+- Ensuring email uniqueness to prevent duplicate accounts and explaining cart data defaults
+
+Add admin login endpoint and routes using Express router
+- Create admin login function in Express for request and response handling
+- Implement multiple routes using controller functions for user registration, login, and admin login
+
+Create API endpoints for user registration and login
+- Add user router in server.js and import in user controller.js
+- Update register user function with response and message
+
+Validating email format and strong password for user authentication
+- Imported validator package to validate user email
+- Implemented logic to check email validity and password strength, and display appropriate messages
+
+Generate salt and hash user's password for secure storing.
+- Use bcrypt package to generate salt and hash the user's password securely.
+- Store the hashed password in the database instead of the original password.
+
+Creating controller function for user registration and testing the API using Thunder client
+- Adding success property with token for successful registration and error handling using try-catch block and generating response with success message for error cases.
+- Testing the API by sending name, email, and password as JSON properties in a POST request and verifying success and error messages in the response.
+
+Demonstration of creating accounts and password validation in the registration API.
+- Creating accounts successfully with specified email and password lengths.
+- Proper password validation to ensure accounts are created with strong passwords.
+
+Creating a login user controller function.
+- Sending user ID and generating a response with success property and token.
+- Handling incorrect password and email ID, and error catching.
+
+Created user login, registration, and product controller functions
+- Implemented user login and registration features
+- Created four controller functions for adding, listing, removing, and retrieving single product details
+
+Adding product routes and controllers
+- Added API endpoint for product in server.js
+- Created middleware using Multer for file upload
+
+Creating and using storage middleware for file uploads
+- Explanation on creating and exporting upload middleware for file storage
+- Implementing the middleware in the product route for processing multiple images
+
+Testing the API functionality through Thunder client
+- Adding product details and images through Thunder client by sending form data with files
+- Verifying if the product details and images are successfully received in the function
+
+Uploading and handling product images.
+- Multiple image selection and addition to products.
+- Error handling for missing images and updating product controller.
+
+Uploading images to cloud storage and storing URLs in database
+- Images are filtered and uploaded to cloud storage based on the admin's input
+- Cloudinary package is used to upload images using the dot upload function and the individual item's path is retrieved for uploading
+
+Store image URLs on cloud storage and access them using secure URLs.
+- Define resource type and store image URL in the secure URL area.
+- Upload images on cloud storage, get URLs, and store them in the images URL array. Check functionality by sending multiple images.
+
+Adding product data to the database using the product model
+- Importing the product model and providing product data in the specified format
+- Saving the product in the database and generating a success response
+
+API allows adding and listing products in the e-commerce website
+- The add product feature is currently publicly accessible, but authentication will be added later for admin access.
+- The API will be created to list all available products in the database for display on the front end.
+
+Creating API for removing products
+- Testing the remove product API by creating a new request with type post and providing the product ID in the body
+- Implementing a logic to remove the product and discussing plans for adding authentication for product deletion
+
+Creating API for retrieving single product using product ID
+- The API retrieves product details using product ID provided in the request body
+- The response contains the product details or an error message if the product is not found
+
+Implementing admin authentication using JWT for an e-commerce website
+- Generating token using JWT sign method with email, password, and JWT secret
+- Checking admin authentication using token in the request body
+
+Creating admin authentication middleware for MERN stack eCommerce project
+- Importing JWT and creating an async arrow function for admin authentication
+- Checking for token availability in headers and generating response if user is not authorized
+
+Creating an admin authentication middleware for product routes
+- The middleware checks the token for authorization and generates a response if not authorized.
+- If authorized, the middleware calls the callback function and handles errors during the process.
+
+Setting up admin middleware for secure API access
+- Using tokens for authorization to add or delete products
+- Creating APIs for admin, user registration, login, and building admin panel
+
+Setting up admin panel and adding Tailwind CSS
+- Opening admin panel and clearing default project in web browser
+- Installing Tailwind CSS and configuring the admin project
+
+Setting up folder structure and adding assets for admin panel
+- Open and edit index.css file to add necessary lines for styling
+- Create folder structure with Pages for admin panel and components like navigation bar and sidebar
+
+Adding styling properties to navigation bar
+- Adjusting logo size and button styling
+- Creating sidebar component and integrating it in the app
+
+Creating sidebar component with navigation links and CSS styling.
+- Adding classes and properties for layout and styling in the sidebar and navigation links.
+- Testing and verifying functionality in the web browser.
+
+Implementing anchor links with active class and applying CSS properties
+- Using active class to highlight anchor links and applying CSS properties in index.css file
+- Adding custom font support using Google fonts and setting up routes in app.jsx file
+
+Setting up routes using React Router Dom package
+- Import 'routes' and 'Route' tag from the package
+- Create multiple routes specifying path and page components
+
+Creating HTML structure for the form in admin panel
+- Adding email and password input fields with required attributes
+- Styling the form elements with CSS properties
+
+Adding CSS properties to elements
+- Adding class name property with text to h1 tag for styling
+- Adding class name property with various CSS properties to div for styling
+
+Setting up backend URL for API call in MERN stack project
+- Saving backend URL in environment variable for easy access
+- Making API call in login.jsx file to authenticate the admin using email ID and password
+
+Backend URL and API endpoint concatenation process
+- Importing backend URL from app.jsx file and concatenating API endpoint
+- Sending email and password in request body and handling authentication response
+
+Implementing user authentication using local storage
+- Using useEffect hook to store and retrieve user token in local storage
+- Checking and updating user authentication status using local storage data
+
+Token is used for API calls and authentication
+- Token is passed as props for API calls related to product and order listing
+- Functionality of login, logout, and adding products depends on token
+
+Creating input fields and styling them for product data entry
+- Adding a div and p tag to structure the form and label the input field for product name
+- Adding CSS properties such as width, padding, border, and margin to style the input field
+
+Setting up product descriptions and category selection
+- Adding product descriptions and category selection fields using input fields and text areas
+- Creating drop-down select options for category and subcategory selection
+
+Adding product sizes and best seller functionality.
+- Creating multiple different sizes for products vertically aligned with CSS properties.
+- Adding best seller checkbox functionality to categorize products.
+
+Setting up CSS properties, creating a submit button and state variables in React JS
+- Adding CSS properties to checkbox, div tag, and button for styling
+- Creating state variables to store product data and images in React JS
+
+Add functionality to display selected images instead of upload icon
+- Check if image is available and create URL accordingly
+- Update tags with respective image numbers for display
+
+Adding controlled input fields for name, description, category, subcategory, and price
+- Implementing onchange property to capture input values and updating corresponding state variables
+- Adding logic to store selected sizes in an array on click event
+
+Utilize dynamic class names by using template literals and ternary operator
+- Add dynamic class names using backticks and remove single quotes
+- Implement different background colors based on selected sizes using ternary operator
+
+Setting up logic for bestsellers and submission function
+- Setting bestseller and checked properties based on previous data
+- Creating on submit function to handle form submission and API call
+
+Adding image selection logic for products
+- We check if an image is selected before appending it to the form data
+- We use AOS to send the form data to the backend API with the product add endpoint
+
+Adding a product with authentication and token handling
+- Selecting product image, name, description, category, price, and size before adding
+- Handling authentication by sending token with API request for successful product addition
+
+Creating Product Listing Page in Full Stack E-commerce Website
+- Copying, adding images, setting price, error handling and notifications on product addition.
+- Displaying products from database on List Items page in VS Code.
+
+Setting up API call and fetching data using useEffect hook
+- Creating a function to fetch list data and triggering it using useEffect hook
+- Handling API response, logging the data and storing it in the state
+
+Styling elements and displaying product list
+- context: Styling elements using CSS properties with media queries for responsive design.
+- Displaying product list using map method with detailed steps.
+
+Creating product display and details
+- Using image array to display product images and accessing specific index
+- Displaying product name, category, price, and adding CSS properties to align product details
+
+Implement admin feature to delete product
+- Define headers to provide token for authentication
+- Display toast notification based on API response
+
+Adding and removing products from the e-commerce website
+- Adding products involves selecting image, name, description, category, subcategory, price, and sizes before uploading to the database.
+- Removing products removes the selected product and displays a notification, with the option to remove multiple products.
+
+Fetching product data from API using Axios
+- Install Axios package in frontend using npm
+- Create async arrow function to call API and fetch data
+
+Implementing backend API to fetch product list
+- Adding Axios to make API call and concatenating product list API endpoint
+- Handling API response, updating product state variable and displaying toast notification in case of error
+
+Setting up product display and user registration functionality in front and back end
+- Updating the main image when selecting a small image of a product. Generating product URL and product ID in the database when adding a new product.
+- Displaying related products and adding products to the cart with successful functionality.
+- Adding user login and registration functionality in the back end, and integrating it with the front end.
+
+Setting up state variables and linking them to input fields
+- Creating three state variables for name, password, and email
+- Linking the state variables with input fields using onchange property and set functions
+
+Implementing API call for sign up and login process
+- Storing token in state and local storage for successful sign up
+- Sending email and password for login API call in login scenario
+
+Handling login functionality and displaying success/failure notifications
+- Setting token in state and local storage if login is successful
+- Displaying toast notification and logging error if login is unsuccessful
+
+Implementing login and logout functionality using React JS and localStorage.
+- Usage of useEffect hook to manage state and update token from localStorage.
+- Creation of logout function to remove token from localStorage and clear state variable.
+
+Implementing login and logout functionality
+- Adding the logout function and fixing the redirection to the login page
+- Setting the default form to login and ensuring proper login and logout functionality
+
+Implementing functionality to save products in user cart
+- Adding onclick property to navigate to orders page after adding product to cart
+- Creating API to save products in database when logged in
+
+Creating routes for user cart functions
+- Importing necessary modules and functions from card controller and Express
+- Creating multiple endpoints for get user cart, add to cart, and update cart functions
+
+Extract user ID from token for updating cart or placing order
+- Obtain user ID from token and set in request.body.userID
+- Use extracted user ID to update cart or place order
+
+Handling user ID, item ID, and size data
+- User ID extracted from request body and decoded from token
+- Item ID and size added to user's cart data after finding and modifying user data
+
+Updating user's cart data
+- Obtain user ID, item ID, and quantity for API call
+- Update cart data with item ID, size, and quantity; save in database
+
+Setting up cart functionality in the MERN stack eCommerce project
+- Adding logic for product add to cart, update cart, and get user cart data
+- Linking the cart API with the front end for user interaction
+
+Successfully updating cart items and quantities in database through API calls
+- Add to cart function updates cart in database after selecting size and quantity
+- API added for updating quantity on cart page, using token for logged in users
+
+Updating card data from database on web page reload.
+- Create an asynchronous function named getUserCard to fetch and update card data using API endpoint.
+- Display card data if successful, handle errors using try-catch block.
+
+Integrated cart API for user's cart data manipulation
+- Users' cart data can be fetched, products can be added, updated, or deleted in the database
+- Next logic will focus on order placement and details retrieval in the database
+
+Creating order schema for e-commerce website
+- Defining properties like name, address, status, payment method
+- Setting default values for status and payment method
+
+Setting up admin panel functions.
+- All orders data added for admin panel.
+- User order data for front end handled with user orders function.
+
+Creating multiple endpoints for admin features
+- Import controller functions and create order router
+- Add admin and payment features by updating status and placing orders
+
+Adding logic for place order using Cod method
+- Fetching user ID, amount, address, and items from the request body
+- Creating order data with user ID, items, amount, payment method, and date
+
+Creating and saving orders in the database
+- Order model structure to include address information
+- Clearing user's cart data after order placement
+
+Updating form data using onchange handler
+- Accessing input field value with event.target.value
+- Updating form data object by setting new field value using spread operator
+
+Setting up user details input fields for a checkout form.
+- Name property set to 'email' for email field. Value set to form data.
+- Name property set to 'street' for street address field. Value set to form data.
+
+Iterating through cart items and adding product info
+- Use for-in loop to iterate through cart items collection and identify added products
+- Check if product is added in cart and extract product data to add size and quantity
+
+Adding item info and checking functionality
+- Verify functionality by adding items, clearing cart, and placing order
+- Review console log for detailed product information and order processing
+
+Handling order placement response
+- Checking if the order placement is successful and handling the response accordingly.
+- Addressing errors and implementing necessary actions in case of a failed order placement.
+
+Demonstrating placing an order with cash on delivery
+- Adding a product to the cart, filling out the order form, and placing the order with cash on delivery.
+- Viewing the backend orders collection to see order details such as product, size, quantity, address, payment method, and order date.
+
+Fetching and storing orders using backend URL and token
+- Removing products, fetching orders, and storing in state variable
+- Creating async function to load order data and using useEffect with token dependency
+
+Making API call and displaying order details
+- We use exos post method to make backend API call with the user order endpoint
+- Displaying all items in the order on the website
+
+Displaying orders and updating order data
+- Using map and console log to display all orders and items
+- Updating order data with set order data and reverse method for latest orders display
+
+Displaying dynamic date and payment information
+- Using new Date to display dynamic date from data
+- Displaying payment method and updating order status dynamically
+
+Creating state variable and fetching all orders from backend
+- Get token from props and use it to create a state variable named orders
+- Use useEffect and fetch all orders function to make API call to backend and populate orders
+
+Setting up headers and handling response
+- Add headers for authentication and authorization
+- Handle response data and error handling
+
+Adding product details and user's name
+- Added functionality to display product details such as quantity, size, and placement.
+- Implemented code to concatenate and display the user's first and last name.
+
+Displaying User Address and Order Details
+- Adding P tag and displaying user’s address by concatenating different address details.
+- Adding div for order details and displaying the quantity, payment method, status, and date using P tags.
+
+Adding order status options and CSS properties
+- The video shows how to add different order status options like order placed, packing, shipped, out for delivery, and delivered.
+- CSS properties are added to style the select box, div, image, and paragraph tag for a better visual appearance.
+
+Adding CSS properties and functionality to the website
+- Setting padding, margins, and font properties for product names and select menu
+- Implementing functionality to save and refresh order status in the database
+
+Adding update status feature for admin in MERN stack project
+- Updating the order route in JS file to add admin-only status update feature
+- Creating a status handler function to handle status updates using Exo's dopost method and API call
+
+Updating order status and displaying in admin panel
+- Implemented function to update status and handle errors
+- Linked status update function with select tag and tested successful status updates
+
+Setting up Stripe for payment processing in the MERN stack eCommerce project.
+- Initializing Stripe and creating place order controller function for Stripe payment method.
+- Creating order data, initializing payment, and executing the stripe payment.
+
+Creating line items and adding delivery charges to the e-commerce website using React JS
+- Using the map method to create individual items with price and product data
+- Adding delivery charges by defining price data and quantity for the delivery fee
+
+Setting up Stripe payment and handling errors
+- Defining cancel URL for order cancellation and adding line items
+- Creating session for payment and handling errors in frontend implementation
+
+Integrating Stripe payment method with React JS frontend
+- Removing import statement and using global variables for currency
+- Adding API call to A Stripe endpoint and handling response success for payment
+
+Verify payment status and clear cart data
+- Create a controller function 'verifyStripe' to extract user ID, order ID, and success property from request body
+- If payment success is true, update payment status to true and clear user's cart data
+
+Implementing response generation and error handling for payment success/failure
+- Generating response by adding success property as true
+- Implementing order deletion if payment is failed and handling errors
+
+Creating a function to verify payment
+- Using useEffect to execute the verify payment function
+- Using try-catch block to handle token validation and calling API to verify payment
+
+Handling payment success and failure
+- Using 'navigate' to direct users to orders or homepage based on payment response
+- Implementing error handling with console log and toast notification
+
+Setting up Razorpay instance for payment processing.
+- Creating an instance of Razorpay using API keys from the environment file.
+- Using the Razorpay instance to create a payment controller function for the project.
+
+Creating and executing payment using Razorpay
+- Creating an object with amount, currency, and receipt information
+- Using Razorpay instance to create a new order and handle error conditions
+
+Implementing Razorpay payment gateway in the frontend
+- Checking and handling the success response after calling the API to get order data
+- Creating the 'initPay' arrow function to execute the payment using the order details and Razorpay key ID
+
+Setting up key ID, amount, currency, product info, description, order ID, receipt, payment integration function.
+- Define key ID as Reser pay key ID obtained from environment variable
+- Add amount, currency, product info, description, order ID, receipt; create payment integration function with response check.
+
+Creating the 'verify' controller function for payment verification
+- Creating a sync Arrow function named 'verifyReserPay' to handle the verification process
+- Using Razorpay instance to fetch order details and logging the information for verification
+
+Verify and process payment in backend
+- Use order ID for verification and updating payment status.
+- Check if payment status is 'paid' to enable successful transaction.
+
+Linking and verifying Razorpay API in backend
+- Creating a handler function to send order ID to backend for payment verification
+- Using try catch block to handle payment verification success or error
+
+Creating and managing orders in the e-commerce platform
+- Deleting existing orders and checking the order page and admin panel
+- Placing new orders using different payment methods like cash on delivery and razor pay
+
+Configuring Versal Dojon for backend, frontend, and admin panel
+- Create versal dojon file in backend, front end, and admin panel folders
+- Copy and paste the respective configuration codes for Express backend and React frontend
+
+Setting up GitHub and deploying the project
+- Created .gitignore file to exclude node_modules folder and environment variable file
+- Uploaded the project on GitHub and deployed the backend on Versal
+
+Deploying E-commerce Website Components
+- Deployment process for frontend and admin panel
+- Replacing backend URLs and deploying the components
+
+Overview of ordering process
+- Process of selecting and adding items to cart and placing orders
+- Deployment options explained for the website
